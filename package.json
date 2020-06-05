@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel ./src/index.html ./src/content.tsx",
-    "bundle": "parcel build ./src/index.html ./src/content.tsx"
+    "dev": "parcel ./src/index.tsx",
+    "build": "parcel build ./src/index.tsx"
   },
   "repository": {
     "type": "git",

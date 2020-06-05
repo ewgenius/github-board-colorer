@@ -37,53 +37,41 @@ export const ColorPicker = ({
   return (
     <>
       <button
-        style={{
-          border: "none",
-          backgroundColor: card.color,
-          position: "absolute",
-          top: 26,
-          right: 10,
-        }}
+        className="gh-colorer-palette"
+        style={{ backgroundColor: card.color }}
         onClick={openPicker}
       >
         <svg
+          stroke="currentColor"
+          fill="currentColor"
+          strokeWidth="0"
+          viewBox="0 0 24 24"
+          height="18px"
+          width="18px"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 16 16"
-          width="16"
-          height="16"
-          fill="#6a737d"
         >
-          <path d="M5 5.782V2.5h-.25a.75.75 0 010-1.5h6.5a.75.75 0 010 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 01-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 019.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 01-.633 1.153H3.233a.75.75 0 01-.633-1.153z"></path>
+          <g>
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M12 2c5.522 0 10 3.978 10 8.889a5.558 5.558 0 0 1-5.556 5.555h-1.966c-.922 0-1.667.745-1.667 1.667 0 .422.167.811.422 1.1.267.3.434.689.434 1.122C13.667 21.256 12.9 22 12 22 6.478 22 2 17.522 2 12S6.478 2 12 2zm-1.189 16.111a3.664 3.664 0 0 1 3.667-3.667h1.966A3.558 3.558 0 0 0 20 10.89C20 7.139 16.468 4 12 4a8 8 0 0 0-.676 15.972 3.648 3.648 0 0 1-.513-1.86zM7.5 12a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm9 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM12 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+          </g>
         </svg>
       </button>
       {open ? (
-        <div
-          style={{
-            position: "absolute",
-            right: 0,
-            top: 48,
-            zIndex: 1000,
-            overflow: "hidden",
-            borderRadius: 6,
-            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-            cursor: "default",
-          }}
-        >
-          <div
-            onClick={closePicker}
-            style={{
-              position: "fixed",
-              top: 0,
-              bottom: 0,
-              left: 0,
-              right: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.1)",
-            }}
-          />
+        <div className="gh-colorer-picker">
+          <div onClick={closePicker} className="gh-colorer-fade" />
           <BlockPicker
             color={card.color}
             onChange={setCardColor}
-            colors={["#ffffff", "#8af3b6", "#f3f994", "#f99494", "#94cbf9"]}
+            colors={[
+              "#ffffff",
+              "#ffa3a3",
+              "#ffdaa3",
+              "#f5ffa3",
+              "#a4ffa3",
+              "#a3ffff",
+              "#a3a6ff",
+              "#ffa3e7",
+            ]}
           />
         </div>
       ) : null}

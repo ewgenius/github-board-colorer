@@ -69,7 +69,7 @@ export const ColorPicker = ({
               "#f5ffa3",
               "#a4ffa3",
               "#a3ffff",
-              "#a3a6ff",
+              "#a3c8ff",
               "#ffa3e7",
             ]}
           />

@@ -1,0 +1,14 @@
+{
+  "name": "GitHub Board colorer",
+  "version": "1.0",
+  "description": "Color your project board cards",
+  "manifest_version": 2,
+
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "matches": ["https://github.com/*"]
+    }
+  ]
+}

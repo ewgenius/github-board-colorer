@@ -2,6 +2,9 @@
 
 Color your project board
 
+[Chrome](https://chrome.google.com/webstore/detail/github-board-colorer/ddlonobiocngolmiohjikkmmakbhejmf)
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/github-board-colorer/)
+
 ![screenshot](https://github.com/ewgenius/github-board-colorer/blob/master/assets/screen.png?raw=true)
 
 ---
